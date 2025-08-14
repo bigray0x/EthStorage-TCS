@@ -17,3 +17,8 @@ EthStorage is a Layer 2 storage rollup solution built on top of Ethereum, aiming
 - At least one public repository.
 - At least following 5 GitHub accounts and have at least 1 follower.
 - Must allow the ceremony tools to read and write GitHub Gists on your account.
+
+### How to contribute
+
+- Step 1: clone and Run this script:
+  
