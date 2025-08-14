@@ -61,10 +61,6 @@ fi
 nvm use 18
 nvm alias default 18
 
-echo "=== Creating ceremony directory ==="
-mkdir -p ~/trusted-setup-tmp
-cd ~/trusted-setup-tmp
-
 echo "=== Installing Phase2 CLI ==="
 if ! command -v phase2cli &>/dev/null; then
     npm install -g @p0tion/phase2cli
@@ -81,15 +77,14 @@ read -p "Do you want to contribute to the ceremony now? (y/n): " contribute_now
 
 if [[ "$contribute_now" =~ ^[Yy]$ ]]; then
     if [ "$PLATFORM" = "Linux" ]; then
-        echo "Running inside a screen session named 'ceremony'..."
-        screen -S ceremony bash -c "cd ~/trusted-setup-tmp && phase2cli contribute -c ethstorage-v1-trusted-setup-ceremony"
+        echo "Starting contribution inside a screen session named 'ceremony'..."
+        screen -S ceremony bash -c "phase2cli contribute -c ethstorage-v1-trusted-setup-ceremony"
     else
         echo "Running ceremony directly (keep this terminal open)..."
         phase2cli contribute -c ethstorage-v1-trusted-setup-ceremony
     fi
 else
     echo "You can contribute later by running:"
-    echo "  cd ~/trusted-setup-tmp"
     echo "  phase2cli contribute -c ethstorage-v1-trusted-setup-ceremony"
 fi
 
