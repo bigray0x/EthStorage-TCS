@@ -3,7 +3,7 @@
 ![Image 8-14-25 at 10 46 AM](https://github.com/user-attachments/assets/6f3455d4-c23d-4ff9-a608-a67ae5b87ae5)
 
 
-## Detailed guide to participate in EthStorage trusted ceremony setup
+## Detailed guide to participate in EthStorage trusted ceremony setuP
 
 ### what's EthStorage?
 
@@ -25,7 +25,7 @@ EthStorage is a Layer 2 storage rollup solution built on top of Ethereum, aiming
 
 ### - Step 1: clone and Run this script:
 ```
-git clone https://github.com/bigray0x/EthStorage-TCS.git && cd EthStorage-TCS
+git clone https://github.com/unifyWeb3/EthStorage-TCS.git && cd EthStorage-TCS
 ```
 
 ### - Step 2: make the script executable
